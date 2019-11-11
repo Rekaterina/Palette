@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://kit.fontawesome.com/30b69abfe7.js" crossorigin="anonymous"></script>
+  <title>Palette</title>
+<link href="style.bundle.css" rel="stylesheet"></head>
+<body>
+  <header class="header">
+    <div class="header-container"><span>≡</span><h1 class="heading-app">CodeJam-Palette</h1></div>
+  </header>
+  <main class="main">
+    <section class="toolbar">
+      <div class="toolbar-container toolbar-main">
+        <div class="tool-item fill-bucket">
+          <i class="fas fa-fill-drip"></i>
+          <span class="tool-name">Fill bucket</span>
+        </div>
+        <div class="tool-item choose-color">
+          <i class="fas fa-eye-dropper"></i>
+          <span class="tool-name">Choose color</span>
+        </div>
+        <div class="tool-item pencil">
+          <i class="fas fa-pencil-alt"></i>
+          <span class="tool-name">Pencil</span>
+        </div>
+      </div>
+      <div class="toolbar-container toolbar-color">
+        <div class="color-item">
+          <div class="current-color"><input type="color" value="#41F795" class="current-color-input hidden"></input></div>
+          <span class="color-name">Current color</span>
+        </div>
+        <div class="color-item">
+          <div class="color previous-color"></div>
+          <span class="color-name">Previous color</span>
+        </div>
+        <div class="color-item">
+          <div class="color bg-red"></div>
+          <span class="color-name">Red</span>
+        </div>
+        <div class="color-item">
+          <div class="color bg-blue"></div>
+          <span class="color-name">Blue</span>
+        </div>
+      </div>
+    </section>
+    <div class="canvas-container">
+      <canvas class="canvas"></canvas>
+    </div>
+  </main>
+<script type="text/javascript" src="app.bundle.js"></script></body>
+</html>
